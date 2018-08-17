@@ -1,5 +1,31 @@
+body {
+	width: 980px;
+	margin: auto;
+	background-image: url(../images/squared_metal.png);
+	color: purple;
+	text-align: center;
+}
+
+h1 {
+	font-size: 68px;
+	text-align: center;
+}
+
+.instructions {
+	height: 150px;
+	font-size: 18px;
+	text-align: left;
+}
+
+h2, h3, h4 {
+	font-size: 28px;
+	display: inline;
+	margin: 60px;
+}
+
 .crystal-image {
-	height: 200px;
-	width: 200px;
-	margin: 20px;
+	align-self: center;
+	height: 150px;
+	width: 150px;
+	margin: 30px;
 }

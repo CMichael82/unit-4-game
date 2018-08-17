@@ -1,8 +1,8 @@
 //set a random target number(between 35 and 75) 
-var targetNumber = Math.round(Math.random()*(75-35+1)+35);
+var targetNumber = Math.round(Math.random()*(120-19+1)+19);
 $(".target").text(targetNumber);
 
-var images =["amber-crystal.jpg", "blue-crystal.jpg", "purple-crystal.jpg", "white-crystal.jpg"];
+var images =["crystal-1.jpg", "crystal-2.jpg", "crystal-3.jpg", "crystal-4.jpg", "crystal-5.jpg", "crystal-6.jpg", "crystal-7.jpg", "crystal-8.jpg", "crystal-9.jpg", "crystal-10.jpg"];
 
 var score = 0;
 var wins = 0;
@@ -12,10 +12,10 @@ $(".losses").text(losses);
 var crystalValues =[];
 var assignedValue;
 
-//create a for loop to run 4 times
-for (var i = 0; i<4;i++) {
+
+	for (var i = 0; i<4;i++) {
 	//a. create a random number generator (for crystal values)
-	crystalValues.push(Math.round(Math.random()*(10-1+1)+1));
+	crystalValues.push(Math.round(Math.random()*(12-1+1)+1));
 	console.log(crystalValues);
 	//b. create an image (using jquery) on each loop
 	var crsytalImage = $("<img>");
@@ -27,7 +27,6 @@ for (var i = 0; i<4;i++) {
 	//e. append the image to the div
 	$("#allCrystals").append(crsytalImage);
 }
-
 
 //5. create an onclick function (attached to image)
 
@@ -54,15 +53,17 @@ $(".crystal-image").on("click", function() {
 		losses++;
 		$(".losses").text(losses);
 		resetGame();
-	}
+		}
 
+		//7. create a reset game function
 });
 
-//7. create a reset game function
 //a. reset all but wins and losses
 function resetGame() {
-	targetNumber = Math.round(Math.random()*(75-35+1)+35);
 	score = 0;
-}
+	$(".score").text(score);
+	targetNumber = Math.round(Math.random()*(120-19+1)+19);
+	$(".target").text(targetNumber);
+	}
 
-
+	
