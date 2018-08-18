@@ -17,7 +17,7 @@ var crsytalImage;
 //Function to create crystal images (random selection) and set random values//
 function createCrystals() {
 	for (var i = 0; i < 4; i++) {
-		crystalValues.push(Math.round(Math.random() * (12 - 1 + 1)));
+		crystalValues.push(Math.round(Math.random() * (12 - 1 + 1)+1));
 		console.log(crystalValues);
 		crsytalImage = $("<img>");
 		crsytalImage.attr("src", "assets/images/" + images[Math.floor(Math.random() * images.length)] + "");
