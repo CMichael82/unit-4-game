@@ -10,7 +10,7 @@
 *	Each time the game restarts, the crystal values change.
 
 ### Technologies Used:
-HTML, CSS, JavaScript, and JQuery
+HTML, CSS, Bootstrap, JavaScript, and JQuery
 
 ### Built Using:
 Visual Code
